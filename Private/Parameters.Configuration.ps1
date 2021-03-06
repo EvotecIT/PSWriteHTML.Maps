@@ -28,7 +28,7 @@ $Script:Configuration = [ordered] @{
         MapaelMaps_Poland     = @{
             Internal = $true
             Header   = @{
-                JSLink = "$($Script:ConfigurationURL)/Maps/poland/poland.min.js"
+                JSLink = "$($Script:ConfigurationURL)/PSWriteHTML.Maps/Maps/poland/poland.min.js"
                 JS     = "$PSScriptRoot\..\Resources\Maps\poland\poland.js"
             }
             Default  = $true
@@ -37,7 +37,7 @@ $Script:Configuration = [ordered] @{
         MapaelMaps_usa_states = @{
             Internal = $true
             Header   = @{
-                JSLink = "$($Script:ConfigurationURL)/Maps/usa/usa_states.min.js"
+                JSLink = "$($Script:ConfigurationURL)/PSWriteHTML.Maps/Maps/usa/usa_states.min.js"
                 JS     = "$PSScriptRoot\..\Resources\Maps\usa\usa_states.js"
             }
             Default  = $true

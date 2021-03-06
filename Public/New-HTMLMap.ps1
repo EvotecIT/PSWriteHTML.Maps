@@ -4,8 +4,7 @@
         [parameter(Mandatory)][ValidateSet('poland', 'usa_states')][string] $Map,
         [string] $AnchorName
     )
-    Enable-HTMLFeature -Feature Raphael, Mapael, Jquery, JQueryMouseWheel, "MapaelMaps_$Map" -Configuration $Script:Configuration
-
+    Enable-HTMLFeature -Feature Raphael, Mapael, Jquery, JQueryMouseWheel, "MapaelMaps_$Map" -Configuration $Script:Configuration.Features
     if (-not $AnchorName) {
         $AnchorName = "MapContainer$(Get-RandomStringName -Size 8)"
     }
