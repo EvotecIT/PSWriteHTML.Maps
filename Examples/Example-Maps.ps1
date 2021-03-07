@@ -1,4 +1,4 @@
-﻿Import-Module 'C:\Support\GitHub\PSWriteHTML\PSWriteHTML.psd1' -Force
+﻿Import-Module PSWriteHTML -Force
 Import-Module .\PSWriteHTML.Maps.psd1 -Force
 
 New-HTML {
