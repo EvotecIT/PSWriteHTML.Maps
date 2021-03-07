@@ -8,7 +8,7 @@
     Description          = 'Maps extension to PSWriteHTML'
     FunctionsToExport    = 'New-HTMLMap'
     GUID                 = 'ee76d1b8-64f9-44f9-94f0-fcd0c1dfbd8b'
-    ModuleVersion        = '0.0.1'
+    ModuleVersion        = '0.0.2'
     PowerShellVersion    = '5.1'
     PrivateData          = @{
         PSData = @{
