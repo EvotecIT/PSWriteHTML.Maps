@@ -22,7 +22,7 @@
 
 `PSWriteHTML` is PowerShell Module to generate beautiful HTML reports, pages, emails without any knowledge of HTML, CSS or JavaScript.
 `PSWriteHTML.Maps` is a plugin/extension to `PSWriteHTML` that adds ability to display MAPS in PSWriteHTML reports.
-This is proof of concept and good, example for adding a single functionality to `PSWriteHTML`
+This is proof of concept and good example for adding a single functionality to `PSWriteHTML`
 
 - [PSWriteHTML.Maps - PowerShell Module](#pswritehtmlmaps---powershell-module)
   - [Installation](#installation)
