@@ -1,7 +1,7 @@
 ﻿function New-HTMLMap {
     [cmdletBinding()]
     param(
-        [parameter(Mandatory)][ValidateSet('poland', 'usa_states')][string] $Map,
+        [parameter(Mandatory)][ValidateSet('poland', 'usa_states', 'world_countries')][string] $Map,
         [string] $AnchorName
     )
     Enable-HTMLFeature -Feature Raphael, Mapael, Jquery, JQueryMouseWheel, "MapaelMaps_$Map" -Configuration $Script:Configuration.Features

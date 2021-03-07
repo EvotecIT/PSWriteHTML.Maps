@@ -1,7 +1,7 @@
 ﻿$Script:ConfigurationURL = 'https://cdn.jsdelivr.net/gh/evotecit/cdn@0.0.8'
 $Script:Configuration = [ordered] @{
     Features = @{
-        JQueryMouseWheel      = @{
+        JQueryMouseWheel           = @{
             Header      = @{
                 JSLink = 'https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.min.js'
                 JS     = "$PSScriptRoot\..\Resources\JS\jquery.mousewheel.min.js"
@@ -12,7 +12,7 @@ $Script:Configuration = [ordered] @{
             Default     = $true
             Email       = $false
         }
-        Mapael                = @{
+        Mapael                     = @{
             Comment     = 'Mapael JQuery'
             Header      = @{
                 JSLink = 'https://cdn.jsdelivr.net/npm/jquery-mapael@2.2.0/js/jquery.mapael.min.js'
@@ -25,7 +25,7 @@ $Script:Configuration = [ordered] @{
             Default     = $true
             Email       = $false
         }
-        MapaelMaps_Poland     = @{
+        MapaelMaps_Poland          = @{
             Internal = $true
             Header   = @{
                 JSLink = "$($Script:ConfigurationURL)/PSWriteHTML.Maps/Maps/poland/poland.min.js"
@@ -34,7 +34,7 @@ $Script:Configuration = [ordered] @{
             Default  = $true
             Email    = $false
         }
-        MapaelMaps_usa_states = @{
+        MapaelMaps_usa_states      = @{
             Internal = $true
             Header   = @{
                 JSLink = "$($Script:ConfigurationURL)/PSWriteHTML.Maps/Maps/usa/usa_states.min.js"
@@ -43,14 +43,16 @@ $Script:Configuration = [ordered] @{
             Default  = $true
             Email    = $false
         }
+        MapaelMaps_world_countries = @{
+            Internal = $true
+            Header   = @{
+                JSLink = "$($Script:ConfigurationURL)/PSWriteHTML.Maps/Maps/world/world_countries.min.js"
+                JS     = "$PSScriptRoot\..\Resources\Maps\world\world_countries.js"
+            }
+            Default  = $true
+            Email    = $false
+        }
     }
 }
 
-<#
-$Keys = @(
-    'JQueryMouseWheel'
-    'Mapael'
-)
-
-Save-HTMLResource -Configuration $Script:Configuration -Keys $Keys -PathToSave 'C:\Users\przemyslaw.klys\OneDrive - Evotec\Support\GitHub\PSWriteHTML.MAPS\Resources' -Verbose
-#>
+#Save-HTMLResource -Configuration $Script:Configuration -Keys 'JQueryMouseWheel','Mapael' -PathToSave 'C:\Users\przemyslaw.klys\OneDrive - Evotec\Support\GitHub\PSWriteHTML.MAPS\Resources' -Verbose
