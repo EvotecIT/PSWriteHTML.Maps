@@ -1,5 +1,4 @@
 ﻿<p align="center">
-  <a href="https://dev.azure.com/evotecpl/PSWriteHTML.Maps/_build/latest?definitionId=3"><img src="https://dev.azure.com/evotecpl/PSWriteHTML.Maps/_apis/build/status/EvotecIT.PSWriteHTML.Maps"></a>
   <a href="https://www.powershellgallery.com/packages/PSWriteHTML.Maps"><img src="https://img.shields.io/powershellgallery/v/PSWriteHTML.Maps.svg"></a>
   <a href="https://www.powershellgallery.com/packages/PSWriteHTML.Maps"><img src="https://img.shields.io/powershellgallery/vpre/PSWriteHTML.Maps.svg?label=powershell%20gallery%20preview&colorB=yellow"></a>
   <a href="https://github.com/EvotecIT/PSWriteHTML.Maps"><img src="https://img.shields.io/github/license/EvotecIT/PSWriteHTML.Maps.svg"></a>
@@ -45,5 +44,7 @@ Update-Module -Name PSWriteHTML -AllowClobber -Force
 
 ## Changelog
 
+- 0.0.2 - 2021.03.07
+  - Small update with additional map
 - 0.0.1 - 2021.03.07
   - First, basic release
